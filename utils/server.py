@@ -8,7 +8,7 @@ mcp = FastMCP("WeatherServer")
 
 # OpenWeather API configuration
 OPENWEATHER_API_BASE = "https://api.openweathermap.org/data/2.5/weather"
-API_KEY = "a3b0c6e9dc2b82d6cec2ddd2e97dcc25"  # Replace with your own OpenWeather API Key
+API_KEY = "API_KEY"  # Replace with your own OpenWeather API Key
 USER_AGENT = "weather-app/1.0"
 
 
