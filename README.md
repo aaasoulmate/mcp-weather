@@ -1,13 +1,49 @@
-## Use MCP to augment LLMs for reaching weather information.
+# MCP-Augmented LLM Weather Information System
 
-### MCP structure:
- - MCP client: Storing LLMs;
- - MCP server: An intermediate agent to reach external resources / tools
+## Overview
+This system enhances Large Language Models (LLMs) with weather data capabilities using the Message Control Protocol (MCP) framework.
 
-### Execution in terminal:
- - cd ./utils
- - python client.py server.py
+## Demo
+![A demo](./images/demo0.png)
 
-### a demo:
+### Components
+- **MCP Client**: Hosts the primary LLM instance
+- **MCP Server**: Intermediate layer that handles external API connections
 
-![demo0](./images/demo0.png)
+## Configuration
+
+### DeepSeek Platform
+```env
+BASE_URL=https://api.deepseek.com
+MODEL=deepseek-chat
+OPENAI_API_KEY=<your_api_key_here>
+```
+
+### OpenWeather Platform
+```env
+OPENWEATHER_API_BASE=https://api.openweathermap.org/data/2.5/weather
+USER_AGENT=weather-app/1.0
+API_KEY=<your_openweather_api_key>
+```
+
+## Installation & Execution
+
+1. Initialize project:
+```bash
+uv init weather_mcp
+cd weather_mcp
+```
+where weather_mcp is the project file name.
+
+2. Install dependencies:
+```bash
+uv add mcp httpx
+```
+
+3. Launch system:
+```bash
+cd ./utils
+python client.py server.py
+```
+
+> Note: Replace all `<your_api_key_here>` placeholders with actual API keys
