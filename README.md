@@ -1,4 +1,5 @@
 # MCP-Augmented LLM for Reaching Weather Information
+[![smithery badge](https://smithery.ai/badge/@aaasoulmate/mcp-weather)](https://smithery.ai/server/@aaasoulmate/mcp-weather)
 
 ## Overview
 This system enhances Large Language Models (LLMs) with weather data capabilities using the Model Context Protocol (MCP) framework.
@@ -27,6 +28,14 @@ API_KEY=<your_openweather_api_key>
 ```
 
 ## Installation & Execution
+
+### Installing via Smithery
+
+To install MCP-Augmented LLM for Reaching Weather Information for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@aaasoulmate/mcp-weather):
+
+```bash
+npx -y @smithery/cli install @aaasoulmate/mcp-weather --client claude
+```
 
 1. Initialize project:
 ```bash
