@@ -1,0 +1,29 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiKey
+    properties:
+      apiKey:
+        type: string
+        description: OpenWeather API Key
+      openWeatherApiBase:
+        type: string
+        default: https://api.openweathermap.org/data/2.5/weather
+        description: Base URL for OpenWeather API
+      userAgent:
+        type: string
+        default: weather-app/1.0
+        description: User-Agent header
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'python', args: ['utils/server.py'], env: { OPENWEATHER_API_BASE: config.openWeatherApiBase, USER_AGENT: config.userAgent, API_KEY: config.apiKey } })
+  exampleConfig:
+    apiKey: YOUR_OPENWEATHER_API_KEY
+    openWeatherApiBase: https://api.openweathermap.org/data/2.5/weather
+    userAgent: weather-app/1.0
