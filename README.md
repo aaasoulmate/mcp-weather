@@ -1,10 +1,10 @@
 # MCP-Augmented LLM for Reaching Weather Information
 
 ## Overview
-This system enhances Large Language Models (LLMs) with weather data capabilities using the Message Control Protocol (MCP) framework.
+This system enhances Large Language Models (LLMs) with weather data capabilities using the Model Context Protocol (MCP) framework.
 
 ## Demo
-![A demo](./images/demo0.png)
+![A demo](./images/demo1.png)
 
 ### Components
 - **MCP Client**: Store LLms
