@@ -1,4 +1,4 @@
-# MCP-Augmented LLM Weather Information System
+# MCP-Augmented LLM for Reaching Weather Information
 
 ## Overview
 This system enhances Large Language Models (LLMs) with weather data capabilities using the Message Control Protocol (MCP) framework.
@@ -7,8 +7,8 @@ This system enhances Large Language Models (LLMs) with weather data capabilities
 ![A demo](./images/demo0.png)
 
 ### Components
-- **MCP Client**: Hosts the primary LLM instance
-- **MCP Server**: Intermediate layer that handles external API connections
+- **MCP Client**: Store LLms
+- **MCP Server**: Intermediate agent connecting external tools / resources
 
 ## Configuration
 
